@@ -24,7 +24,7 @@ export default function Characters(props) {
                             {character.hair && <p>Hair: <span>{character.hair}</span></p>}
                             {character.eye && <p>Eye color: <span>{character.eye}</span></p>}
                             {character.skin && (
-                                <p>{character.skin === "Fur" ? "Skin" : "Skin tone"}: {character.skin}</p>
+                                <p>{character.skin === "Fur" || characters.skin === "Scales" ? "Skin" : "Skin tone"}: {character.skin}</p>
                             )}
                             <p>Bending/Weapon: <span>{character.weapon ? character.weapon : "None"}</span></p>
                             <p>Profession: <span>{character.profession ? character.profession : "None"}</span></p>
